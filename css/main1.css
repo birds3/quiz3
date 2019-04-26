@@ -1,0 +1,134 @@
+/* Author - Sophie Bird */
+/* Version - V.2 */
+/* shift alt a for a comment in the same line as code */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+:root{
+    --font-family: 'Roboto';
+    --main-color: #05a081;
+    --text-color: #fff;
+    --bg-color: #eee;
+    --bg-color-2: #333;
+    --shadow: 0 0 3px rgba(0,0,0,0.34), 0 0 4px rgba(0,0,0,0.4);
+}
+
+body{
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+
+header{
+    width: 100%;
+    background-color: transparent !important;
+    position: absolute;
+    color: var(--text-color) !important;
+    /* bringing content forward or back + front - back */
+    z-index: 1;
+}
+
+header nav{
+    width: 100%;
+}
+
+nav{
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a{
+    padding: 2em 2.8em;
+    /* makes padding apply on all sides */
+    display: inline-block;
+    color: var(--text-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    flex: 1;
+}
+
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+}
+
+.floatleft{
+    float: left;
+    width: 30%;
+}
+
+.floatright{
+    float: right;
+    width: 60%;
+}
+
+main{
+    padding: 4em 0em;
+    background-color: var(--bg-color);
+}
+
+/* bootstrap recognizes "btn" as a button in HTML */
+.btn{
+    background-color: var(--main-color);
+    padding: 1em 1.5em;
+    color: var(--text-color);
+}
+
+.box{
+    width: 30%;
+    float: left;
+    padding: 2em;
+    text-align: center;
+}
+
+.bg-color{
+    background-color: var(--bg-color-2);
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+.fas{
+    width: 200px;
+
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-color);
+    padding: 2em;
+    text-align: center;
+}
+:root{
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.cards img{
+    max-width: 20%; /* unit vh, vw, rem */
+    margin: 10px;
+    box-shadow: var(--shadow);
+}
